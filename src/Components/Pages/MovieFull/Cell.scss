@@ -1,0 +1,16 @@
+.move-full{
+    &__list-type{
+        color:#AFB2B6;
+        &--light{
+           color:#AFB2B6;
+        }
+    }
+
+    &__list-info{
+        padding-left: 67px;
+        &--light{
+            padding-left: 67px;
+            color: black;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.settings{
+    margin-top: 56px;
+        @media screen and (max-width:640px){
+            margin-top: 40px;
+        }
+        @media screen and (max-width:640px){
+            margin-top: 32px;
+        }
+    &__box{
+        display: flex;
+        flex-direction: column;
+        row-gap:40px;
+        margin-bottom: 48px;
+        @media screen and (max-width:480px){
+            margin-bottom: 40px;
+        }
+    }
+       
+    &__buttons{
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+    &__buttons-box{
+        display: flex;
+        max-width: 572px;
+        width: 100%;
+        column-gap: 40px;
+        @media screen and (max-width:768px){
+            max-width: 768px;
+            column-gap: 33px;
+        }
+        @media screen and (max-width:480px){
+            flex-direction: column;
+            row-gap: 16px;
+        }
+    }
+}

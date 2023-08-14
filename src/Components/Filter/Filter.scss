@@ -1,0 +1,70 @@
+.filter{
+    position: absolute;
+    width: 100%;
+    height: calc(100% + 24px);
+    top: -24px;
+    left: 0;
+    transform: translate(0,0);
+    display: flex;
+    justify-content: flex-end;
+    transition: all 0.8s;
+    &__bg{
+        opacity: 0.8;
+        flex:1 1 auto;
+        background: black;
+    }
+    &__settings{
+        width: 518px;
+        background: #242426;
+        height: 100%;
+        padding: 54px 40px 0px 40px;
+        &--light{
+            background: white;
+        }
+    }
+    &__close-box{
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__close{
+        width: 20px;
+        height: 20px;
+        background: none;
+        border: none;
+        position: relative;
+        cursor: pointer;
+        span:nth-child(1){
+            top: calc(50% - 1px);
+            left: -1px;
+            position: absolute;
+            width: 20px;
+            height: 2px;
+            transform: rotate(-45deg);
+            background: white;
+        }
+        span:nth-child(2){
+            top: calc(50% - 1px);
+            left: -1px;
+            position: absolute;
+            width: 20px;
+            height: 2px;
+            transform: rotate(45deg);
+            background: white;
+        }
+        &--light{
+            span:nth-child(1){
+                background: black;
+            }
+            span:nth-child(2){
+                background: black;
+            }
+        }
+    }
+    &__active{
+        transform: translate(120%,0);
+    }
+    &__none{
+        transform: translate(200%,0);
+    }
+}
+

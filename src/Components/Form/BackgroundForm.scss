@@ -1,0 +1,43 @@
+.form-background{
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: url('../../assets/Form/bg.jpg') center center/cover no-repeat;
+   
+
+    @media screen and (max-width:480px){
+        align-items: flex-start;
+        padding-top: 120px;
+    }
+    &__logo{
+        position:absolute;
+        top: 30px;
+        left: 40px;
+        @media screen and (max-width:768px){
+            top: 30px;
+            left: 30px;
+        }
+        @media screen and (max-width:480px){
+            left: 0;
+            top: 30px;
+            width: 100%;
+            text-align: center;
+        }
+    }
+    &__footer{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 24px;
+    }
+}
+
+

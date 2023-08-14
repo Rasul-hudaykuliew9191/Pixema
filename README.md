@@ -1,0 +1,1 @@
+использованные инструменты и библиотеки: React, Redux, Axios, UseContext,  TypeScript, SCSS препроцессоры, hoocks: UseRef, UseState, UseEffect, ReactChildren,  функциональный компонентный подход + TS.
